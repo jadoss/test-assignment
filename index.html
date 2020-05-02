@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+        <title>HomeWork Week 1</title>
+        <script src="/Users/x/github/2020/USAA/actions/dropdown.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="/Users/x/github/2020/USAA/styles/dropdown.css">
+        <link rel="stylesheet" type="text/css" href="/Users/x/github/2020/USAA/styles/barGraph.css">
+		<link rel="stylesheet" type="text/css" href="/Users/x/github/2020/USAA/styles/styles.css">
+	</head>
+	<body>
+        <div class="header">
+                <div style="float: left">
+                    <button class="logoButton" >hello</button>         
+                </div>
+                <div style="float: right">
+                    <button class="navButton" style="text-align: right">FAQ</button>
+                    <button class="navButton">Generic Schedule</button>
+                    <button class="navButton">Generic Text</button>     
+                </div>                      
+        <div>
+        <nav class="splashTopHalf" style="padding-top: 60px; padding-bottom: 60px">
+            <div>
+                <p style="color: white; text-align: center; margin-bottom: 0;">Text <b>Everday, Everything, Everywhere</b></p>
+                <p style="color: white; text-align: center; margin-top: 0; margin-bottom: 20px;">and your generic text <b>fully-funded Text</b></p>
+            </div>
+            <div style="text-align: center; padding-bottom: 30px;">
+                <input style="border: none; background-color: #3498db; font-size: 10px; height: 32px; width: 180px;" placeholder="Email Address" type="email" name="email">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Select your District</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#">District 1</a>
+                      <a href="#">District 2</a>
+                      <a href="#">District 3</a>
+                      <a href="#">District 4</a>
+                      <a href="#">District 5</a>
+                      <a href="#">District 6</a>
+                      <a href="#">District 7</a>
+                      <a href="#">District 8</a>
+                      <a href="#">District 9</a>
+                      <a href="#">District 10</a>
+                    </div>
+                  </div>
+                <button style="background: white; color: rgb(19, 109, 138)">GO</button>
+            </div>
+            <div class="checkbox" style="text-align: center;">
+                <input type="checkbox" style="background: none;">
+                <label style="color: white"> I'd like to receive updates from Generic Text about this program</label>
+            </div>
+        </nav>
+
+		<section>	
+			<article style="padding-left: 40px; background-color: none; text-align: center">
+				<heading style="font-size: 24px; color: white; text-align: center"><b>There are currently</b></heading>
+				<h1 class="variableNumber" onload="animateValue()" id="countNumber" style="margin-top: 30px; margin-bottom: 30px; color: lightgreen; font-size: 88px;">1</h1>
+				<b style="font-size: 24px; color: white; text-align: center">Pledges from the 10<br> Districts of City, ST.</b>
+			</article>
+		</section>
+
+		<aside style="float: left">
+            <section class="bar-graph bar-graph-horizontal bar-graph-one">
+                <div class="bar-one" style="margin-bottom: 2px;">
+                  <span class="year">District 1</span>
+                  <div class="bar" data-percentage="49.6%"></div>
+                  <span style="padding-left: 6px; font-size: 10px; background-color: none!important; color: white">112 pledges</span>
+                </div>
+                <div class="bar-two" style="margin-bottom: 2px;">
+                  <span class="year">District 2</span>
+                  <div class="bar" data-percentage="41%"></div>
+                  <span style="padding-left: 6px; font-size: 10px; background-color: none!important; color: white">98 pledges</span>
+                </div>
+                <div class="bar-three" style="margin-bottom: 2px;">
+                  <span class="year">District 3</span>
+                  <div class="bar" data-percentage="44.7%"></div>
+                  <span style="padding-left: 6px; font-size: 10px; background-color: none!important; color: white">119 pledges</span>
+                </div>
+                <div class="bar-four" style="margin-bottom: 2px;">
+                  <span class="year">District 4</span>
+                  <div class="bar" data-percentage="46.8%"></div>
+                  <span style="padding-left: 6px; font-size: 10px; background-color: none!important; color: white">126 pledges</span>
+                </div>
+                <div class="bar-one" style="margin-bottom: 2px;">
+                    <span class="year">District 5</span>
+                    <div class="bar" data-percentage="69.6%"></div>
+                    <span style="padding-left: 6px; font-size: 10px; background-color: none!important; color: white">129 pledges</span>
+                  </div>
+                  <div class="bar-two" style="margin-bottom: 2px;">
+                    <span class="year">District 6</span>
+                    <div class="bar" data-percentage="71%"></div>
+                    <span style="padding-left: 6px; font-size: 10px; background-color: none!important; color: white">44 pledges</span>
+                  </div>
+                  <div class="bar-three" style="margin-bottom: 2px;">
+                    <span class="year">District 7</span>
+                    <div class="bar" data-percentage="24.7%"></div>
+                    <span style="padding-left: 6px; font-size: 10px; background-color: none!important; color: white">118 pledges</span>
+                  </div>
+                  <div class="bar-four" style="margin-bottom: 2px;">
+                    <span class="year">District 8</span>
+                    <div class="bar" data-percentage="46.8%"></div>
+                    <span style="padding-left: 6px; font-size: 10px; background-color: none!important; color: white">125 pledges</span>
+                  </div>
+                  <div class="bar-one" style="margin-bottom: 2px;">
+                    <span class="year">District 9</span>
+                    <div class="bar" data-percentage="49.6%"></div>
+                    <span style="padding-left: 6px; font-size: 10px; background-color: none!important; color: white">101 pledges</span>
+                  </div>
+                  <div class="bar-two" style="margin-bottom: 2px;">
+                    <span class="year">District 10</span>
+                    <div class="bar" data-percentage="61%"></div>
+                    <span style="padding-left: 6px; font-size: 10px; background-color: none!important; color: white">27 pledges</span>
+                  </div>
+              </section>
+		</aside>
+
+		<div class="clear"></div>
+
+		<footer>
+			<p style="font-size:small; margin-bottom: 0">C 2015 Generic Test</p>
+		</footer>
+    </body>
+    <script>
+
+        function animateValue(id){
+            // grabs object number and adds counter
+            var obj = document.getElementById(id);
+            var current = obj.innerHTML;
+            var maxCount = 1424;
+            
+            setInterval(function(){
+                if (current < maxCount ) {
+                    obj.innerHTML = current++;
+                }
+            },1);
+        }
+
+        window.onload = animateValue('countNumber');
+    </script>
+</html>
