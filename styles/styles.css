@@ -29,7 +29,7 @@ body {
     margin: none;
     /* text-align: center; */
     background: rgb(45, 59, 136);
-    background-image: url('/Users/x/github/2020/USAA/styles/recycle-back (1).png');
+    background-image: url('./recycle-back (1).png');
     background-repeat: no-repeat;
   }
   footer {
