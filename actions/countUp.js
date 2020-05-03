@@ -4,7 +4,7 @@ function animateValue(id){
     
     setInterval(function(){
         obj.innerHTML = current++;
-    },1000);
+    },100);
 }
 
 window.onload = animateValue('countNumber');
